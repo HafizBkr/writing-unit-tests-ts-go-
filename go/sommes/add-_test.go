@@ -13,6 +13,7 @@ func TestAdd(t *testing.T) {
 	}
 
 }
+
 //test de benchmarking
 func BenchmarkAdd(b *testing.B) {
 
@@ -20,3 +21,8 @@ func BenchmarkAdd(b *testing.B) {
 		add(12, 12) 
 	}
 }
+
+//capturer le résultat du benchmark
+// func BenchmarkAddResult(b *testing.B) testing.BenchmarkResult {
+// 	return testing.Benchmark(BenchmarkAdd)
+// }
